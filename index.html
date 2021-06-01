@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Liste der abbonierten Podcasts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+      h1 {
+        color: indigo;
+      }
+      h2 {
+        color: dodgerblue;
+      }
+      h3 {
+        color: mediumblue;
+      }
+      h4 {
+        color: midnightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="picture/logo.png" alt="Synapsis, Titel der Web-Anwendung " />
+    </header>
+    <nav>
+      <table>
+        <tr>
+          <th>
+            <a href="index.html">Liste der Abbonierten Podcasts</a>
+          </th>
+          <th>
+            <a href="podcast.html">Details zum Podcast</a>
+          </th>
+          <th>
+            <a href="episode.html">Details zur Episode</a>
+          </th>
+          <th>
+            <a href="newPodcast.html">Neuen Podcast hinzufügen</a>
+          </th>
+        </tr>
+      </table>
+      <br /><br />
+      <form
+        action="https://labs.inf.fh-dortmund.de/podcastService/testPodcastSearch.php"
+        method="GET"
+      >
+        <input
+          name="pctitle"
+          type="text"
+          size="25"
+          maxlength="40"
+          placeholder="z.B.Titel_des_Podcasts_1"
+          pattern="[A-Z]{1}[\s\w-]*"
+        />
+        <button><strong>Finden!</strong></button>
+      </form>
+    </nav>
+    <hr />
+    <ul>
+      <li>
+        <a href="podcast.html"><h2>Titel_des_BeispielPodcasts_1</h2></a>
+        <ol>
+          <li>
+            <h3>Episode_1</h3>
+          </li>
+          <li>
+            <h3>Episode_2</h3>
+          </li>
+          <li>
+            <h3>Episode_3</h3>
+          </li>
+          <li>
+            <h3>Episode_4</h3>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="podcast.html"><h2>Titel_des_BeispielPodcasts_2</h2></a>
+        <ol>
+          <li>
+            <h3>Episode_1</h3>
+          </li>
+          <li>
+            <h3>Episode_2</h3>
+          </li>
+          <li>
+            <h3>Episode_3</h3>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="podcast.html"><h2>Titel_des_BeispielPodcasts_3</h2></a>
+        <ol>
+          <li>
+            <h3>Episode_1</h3>
+          </li>
+          <li>
+            <h3>Episode_2</h3>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="podcast.html"><h2>Titel_des_BeispielPodcasts_4</h2></a>
+        <ol>
+          <li>
+            <h3>Episode_1</h3>
+          </li>
+          <li>
+            <h3>Episode_2</h3>
+          </li>
+          <li>
+            <h3>Episode_3</h3>
+          </li>
+          <li>
+            <h3>Episode_4</h3>
+          </li>
+          <li>
+            <h3>Episode_5</h3>
+          </li>
+        </ol>
+      </li>
+    </ul>
+    <aside>
+      <h2>Neueste Episoden</h2>
+      <ul>
+        <li>
+          <a href="https://workingdraft.de/478/"
+            >Revision 478: Abschweifen mit TypeScript 4.3</a
+          >
+        </li>
+        <li>
+          <a href="https://workingdraft.de/477/"
+            >Revision 477: Komponentenbibliotheken und Design Systeme</a
+          >
+        </li>
+      </ul>
+    </aside>
+    <hr />
+    <footer>
+      <small>&copy;Matrix_Traveler.</small>
+    </footer>
+  </body>
+</html>
