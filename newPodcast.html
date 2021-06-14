@@ -7,11 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <script src="main.js"></script>
-  <style>
-    h1 {
-      color: steelblue;
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -88,14 +83,14 @@
         <br />
         <label><strong>Autor(en):</strong><br />
           <input name="pcautors" type="text" size="50" maxlength="70"
-            placeholder="z.B. Illia Malyar, Zizhao Chen, Andrej Ganowski"
-            pattern="[\w\s&#44;]*[^&#44;]" /></label><br /><br />
+            placeholder="z.B. Illia Malyar, Zizhao Chen"
+            pattern="^[A-Z]{1}[\D\s]{0,}[^&#44;\d\s]$" /></label><br /><br />
         <label><strong>Name des Besitzers:</strong><br />
           <input name="pcownername" type="text" size="25" maxlength="50" required placeholder="Max Mustermann"
-            pattern="[\w\s]*" /></label><br /><br />
+            pattern="^[\w\s]{1,}$" /></label><br /><br />
         <label><strong>E-mail des Besitzers:</strong><br />
           <input name="pcowneremail" type="email" size="30" maxlength="50" placeholder="maxmustermann@gmail.com"
-            pattern="[\w]{1,}[\w.+-]{0,}@[\w]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})" required />
+            pattern="^[\w]{1,}[\w.+-]{0,}@[\w]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$" required />
         </label>
       </fieldset>
       <fieldset>
